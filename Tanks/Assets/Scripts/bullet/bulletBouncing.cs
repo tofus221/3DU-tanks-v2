@@ -8,12 +8,19 @@ public class bulletBouncing : MonoBehaviour
 {
     [SerializeField] private int _nbBounce;
 
+    private AudioSource _audioSource;
+    [Space] [SerializeField] private AudioClip _bouncingSound;
+    [SerializeField] private AudioClip _explosionSound;
+    
+    [Space] [SerializeField] private GameObject _explosionVfx;
+
     private Rigidbody _rgbBullet;
     private Vector3 _lastVelocity;
 
     void Start()
     {
         _rgbBullet = GetComponent<Rigidbody>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void LateUpdate()
@@ -23,12 +30,26 @@ public class bulletBouncing : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        
-        if (other.transform.parent.CompareTag("Walls"))
+        if (other.transform.CompareTag("Walls"))
         {
+            // if already bounced, play audio/vfx and destroy
             if (_nbBounce == 0)
-                Destroy(gameObject);
+            {
+                Instantiate(_explosionVfx, transform);
+                _audioSource.PlayOneShot(_explosionSound);
+                
+                // delayed for the audio/vfx to play
+                GetComponent<TrailRenderer>().enabled = false;
+                GetComponent<MeshRenderer>().enabled = false;
+                Destroy(gameObject, 1f);
+                return;
+            }
+            
+            // play the bouncing sounds, bounce the bullet and rotate to follow the movement
             _nbBounce--;
+
+            _audioSource.PlayOneShot(_bouncingSound);
+            
             Vector3 newDir = Vector3.Reflect(_lastVelocity.normalized, other.contacts[0].normal);
 
             _rgbBullet.velocity = newDir * _lastVelocity.magnitude;
