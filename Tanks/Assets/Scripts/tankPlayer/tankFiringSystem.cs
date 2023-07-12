@@ -30,27 +30,31 @@ public class tankFiringSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canFire())
+        if (Input.GetMouseButtonDown(0) && CanFire())
         {
-            Debug.Log("ammo: " + _currAmmunition);
             _lastTimeFire = Time.time;
             _currAmmunition--;
-            GameObject Bullet = Instantiate(_projectile, _spawner.position, Quaternion.identity);
-            Bullet.transform.rotation = turretTransform.rotation * Quaternion.Euler(90, 0, 0);
+            
+            // instantiate the bullet and rotate it correctly
+            GameObject Bullet = Instantiate(_projectile, _spawner.position, turretTransform.rotation * Quaternion.Euler(90, 0, 0));
+            
+            // add force to the bullet.
             Rigidbody BulletRigiBody = Bullet.GetComponent<Rigidbody>();
             Vector3 bulletDirection = _spawner.position - _baseCanon.position;
             BulletRigiBody.AddForce(bulletDirection.normalized * _projectileSpeed);
+            
+            // reload if no ammo
             if (_currAmmunition == 0)
-                Invoke(nameof(reload), _reloadTime);
+                Invoke(nameof(Reload), _reloadTime);
         }
     }
 
-    private bool canFire()
+    private bool CanFire()
     {
         return _currAmmunition > 0 && Time.time >= _lastTimeFire + (1 / _firingRate);
     }
 
-    private void reload()
+    private void Reload()
     {
         _currAmmunition = _ammunition;
     }
