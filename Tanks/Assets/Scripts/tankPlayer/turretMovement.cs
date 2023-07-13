@@ -6,11 +6,12 @@ using UnityEngine.Rendering;
 
 public class turretMovement : MonoBehaviour
 {
-    [SerializeField] private Camera _camera;
+    private Camera _camera;
     private Plane _plane;
 
     private void Start()
     {
+        _camera = Camera.main;
         _plane = new Plane(Vector3.up, -transform.position.y);
     }
 

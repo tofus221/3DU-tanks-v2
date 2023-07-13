@@ -24,7 +24,7 @@ public class dumbTurretAI : MonoBehaviour
 
     private void Start()
     {
-        Invoke(nameof(ChangeDirection), Random.Range(2, 5));
+        Invoke(nameof(ChangeDirection), Random.Range(2, 10));
     }
 
     // Update is called once per frame
@@ -35,10 +35,15 @@ public class dumbTurretAI : MonoBehaviour
 
     private void FixedUpdate()
     {
+        RaycastHit hit;
         // fires bullet when it sees the player
-        if (Physics.Raycast(_tower.position, _endCanon.position - _baseCanon.position, 30, LayerMask.GetMask("Player"))
+        Vector3 dir = _endCanon.position - _baseCanon.position;
+        if (Physics.Raycast(_tower.position, dir.normalized, out hit, 100, LayerMask.GetMask("Player", "Walls"))
             && CanFire())
         {
+            Debug.DrawLine(_tower.position, hit.point, Color.blue, 1f);
+            if (hit.transform.CompareTag("Walls"))
+                return;
             _currentAmmo = Instantiate(_bullet, _endCanon.position, _tower.rotation * Quaternion.Euler(90, 0, 0));
             Rigidbody rgbAmmo = _currentAmmo.GetComponent<Rigidbody>();
             Vector3 ammoDirection = _endCanon.position - _baseCanon.position;
@@ -50,7 +55,7 @@ public class dumbTurretAI : MonoBehaviour
     private void ChangeDirection()
     {
         _rotationDirection *= -1;
-        Invoke(nameof(ChangeDirection), Random.Range(2, 5));
+        Invoke(nameof(ChangeDirection), Random.Range(2, 10));
     }
 
     private bool CanFire()

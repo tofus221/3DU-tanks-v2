@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560405424693298423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.8499, y: 1, z: 22.0884}
+  m_LocalPosition: {x: -9.8499, y: 0.5, z: 22.0884}
   m_LocalScale: {x: 3.7725232, y: 1, z: 2.9873652}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -158,7 +158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2796104518054658736}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,6 @@ Transform:
   - {fileID: 3116386598283265468}
   - {fileID: 4979500859045742454}
   - {fileID: 769622932240808934}
-  - {fileID: 3082490923365906523}
   m_Father: {fileID: 9041548739443845171}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -262,7 +261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -300,6 +299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -328,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -366,6 +369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -384,6 +391,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -394,7 +409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -428,9 +443,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -454,6 +477,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 656543981132886103, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165529310372705319, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 8161747320736056443, guid: c95218655a105ab479ed2afac14bf679, type: 3}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -464,7 +495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -516,6 +547,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -526,7 +565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -560,9 +599,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -582,6 +629,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -592,7 +647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -626,9 +681,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -652,6 +715,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 656543981132886103, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165529310372705319, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 8161747320736056443, guid: c95218655a105ab479ed2afac14bf679, type: 3}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -662,7 +733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -714,6 +785,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -724,7 +803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -758,9 +837,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -780,6 +867,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -790,7 +885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -824,9 +919,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -856,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -894,6 +997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -922,7 +1029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -960,6 +1067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -978,6 +1089,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -988,7 +1107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1022,9 +1141,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1044,6 +1171,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1054,7 +1189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1088,9 +1223,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1110,6 +1253,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1120,7 +1271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1154,9 +1305,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1186,7 +1345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1224,6 +1383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1242,6 +1405,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1252,7 +1423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1286,9 +1457,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1312,6 +1491,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 656543981132886103, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165529310372705319, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 8161747320736056443, guid: c95218655a105ab479ed2afac14bf679, type: 3}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1322,7 +1509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1374,6 +1561,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1384,7 +1579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1418,9 +1613,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1450,7 +1653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1488,6 +1691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1506,6 +1713,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1516,7 +1731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1550,9 +1765,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1572,6 +1795,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1582,7 +1813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1616,9 +1847,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1638,6 +1877,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1648,7 +1895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1682,9 +1929,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1704,6 +1959,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1714,7 +1977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1748,9 +2011,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1774,6 +2045,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 656543981132886103, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165529310372705319, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 8161747320736056443, guid: c95218655a105ab479ed2afac14bf679, type: 3}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1784,7 +2063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1836,6 +2115,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1846,7 +2133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1880,9 +2167,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1902,6 +2197,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1912,7 +2215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1946,9 +2249,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1960,72 +2271,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
   m_PrefabInstance: {fileID: 8188428811206309488}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &8192156331506160442
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1071628803804878806}
-    m_Modifications:
-    - target: {fileID: 656543981132886103, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_Name
-      value: EnemySpawner (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 22.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
---- !u!4 &3082490923365906523 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
-  m_PrefabInstance: {fileID: 8192156331506160442}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8297396486983559913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2034,6 +2279,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2044,7 +2297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2078,9 +2331,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2110,7 +2371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2148,6 +2409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2176,7 +2441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2214,6 +2479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagWall_04_v2
       objectReference: {fileID: 0}
+    - target: {fileID: 3052786145037884313, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2232,6 +2501,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2242,7 +2519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2276,9 +2553,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2298,6 +2583,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2796104518054658736}
     m_Modifications:
+    - target: {fileID: 117084688482466655, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584140549851487291, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2308,7 +2601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3044179528120879795, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2342,9 +2635,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368293602028163136, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
       propertyPath: m_Name
       value: sandBagWall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440583891959232910, guid: 6838d0b4d8983e347a2bb95f9a35c66d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2368,6 +2669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerSpawer
       objectReference: {fileID: 0}
+    - target: {fileID: 2661714217661991304, guid: 22339f70a52cc7348bd4eccabb27896b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2900490837674745198, guid: 22339f70a52cc7348bd4eccabb27896b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2378,7 +2683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2900490837674745198, guid: 22339f70a52cc7348bd4eccabb27896b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2900490837674745198, guid: 22339f70a52cc7348bd4eccabb27896b, type: 3}
       propertyPath: m_LocalPosition.z

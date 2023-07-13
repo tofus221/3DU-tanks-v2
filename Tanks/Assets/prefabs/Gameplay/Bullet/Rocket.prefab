@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1876646025552870, guid: 1d2ca58cc67f60849bf1ac5779914c88, type: 3}
+      propertyPath: m_TagString
+      value: Bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 4229490665011130, guid: 1d2ca58cc67f60849bf1ac5779914c88, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -140,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9da166ca70a0d014a9a25ec53e632d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isEnemy: 0
   _nbBounce: 1
   _bouncingSound: {fileID: 8300000, guid: 65b741900a718e349ac3e1ad7ae83bb1, type: 3}
   _explosionSound: {fileID: 8300000, guid: 420de80cd1a242249ac212a64777f780, type: 3}
@@ -183,7 +188,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 60
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

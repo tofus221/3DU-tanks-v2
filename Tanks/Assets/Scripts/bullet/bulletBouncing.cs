@@ -3,16 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class bulletBouncing : MonoBehaviour
 {
+    [SerializeField] private bool _isEnemy;
+    
+    [Space]
+    
     [SerializeField] private int _nbBounce;
-
+    
     private AudioSource _audioSource;
-    [Space] [SerializeField] private AudioClip _bouncingSound;
+    
+    [Space] 
+    
+    [SerializeField] private AudioClip _bouncingSound;
     [SerializeField] private AudioClip _explosionSound;
     
-    [Space] [SerializeField] private GameObject _explosionVfx;
+    [Space]
+    
+    [SerializeField] private GameObject _explosionVfx;
 
     private Rigidbody _rgbBullet;
     private Vector3 _lastVelocity;
@@ -34,7 +44,25 @@ public class bulletBouncing : MonoBehaviour
             BounceBall(other);
 
         if (other.transform.CompareTag("Player"))
+        {
             ApplyDamage(other);
+            DestroyBullet();
+        }
+        
+        // if the bullet is from an enemy and it hits an enemy, just destroy
+        if (other.transform.CompareTag("Enemy"))
+        {
+            if (_isEnemy)
+                DestroyBullet();
+            else
+            {
+                ApplyDamage(other);
+                DestroyBullet();
+            }
+        }
+        
+        if (other.transform.CompareTag("Bullet"))
+            DestroyBullet();
     }
 
     private void BounceBall(Collision other)
@@ -62,12 +90,14 @@ public class bulletBouncing : MonoBehaviour
     {
         HealthSystem healthSystem = other.transform.GetComponent<HealthSystem>();
         healthSystem.TakeDamage();
-        DestroyBullet();
     }
 
     // Could use OnDestroy but the audio would cut.
     private void DestroyBullet()
     {
+        // stop the bullet to avoid that the explosion animation moves towards the bullet direction.
+        _rgbBullet.velocity = Vector3.zero;
+        
         Instantiate(_explosionVfx, transform);
         _audioSource.PlayOneShot(_explosionSound);
                 

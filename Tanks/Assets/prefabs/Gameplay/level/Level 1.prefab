@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 484038067434431251}
-  m_Layer: 0
-  m_Name: metalBarrier
+  m_Layer: 8
+  m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ Transform:
   - {fileID: 2739361440413031307}
   - {fileID: 7056371509601161460}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020200446000433105
 GameObject:
@@ -96,7 +96,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2739361440413031307}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.33333334
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 135b1d036ff963043b9dde8fe769dd79, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: b3e56ab1acba0674bab98632d17830ee, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1001 &97581249914108191
 PrefabInstance:
@@ -285,9 +285,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2739361440413031307}
     m_Modifications:
+    - target: {fileID: 1626457090031205914, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_Name
       value: sandWall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261393456453440005, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_RootOrder
@@ -332,6 +344,18 @@ PrefabInstance:
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530997649028456821, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816103411799204129, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165546732436225281, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -399,6 +423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -417,9 +445,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2739361440413031307}
     m_Modifications:
+    - target: {fileID: 1626457090031205914, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_Name
       value: sandWall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261393456453440005, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_RootOrder
@@ -465,6 +505,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3530997649028456821, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816103411799204129, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165546732436225281, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -483,9 +535,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2739361440413031307}
     m_Modifications:
+    - target: {fileID: 1626457090031205914, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_Name
       value: sandWall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261393456453440005, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_RootOrder
@@ -530,6 +594,18 @@ PrefabInstance:
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530997649028456821, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816103411799204129, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165546732436225281, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -597,6 +673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -662,6 +742,10 @@ PrefabInstance:
     - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -729,6 +813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -795,6 +883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -817,6 +909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6165529310372705319, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 8161747320736056443, guid: 3bc597358f75ac9428b9d66bb12f2e7f, type: 3}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -827,7 +923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -893,7 +989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2900490837674745198, guid: 22339f70a52cc7348bd4eccabb27896b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2900490837674745198, guid: 22339f70a52cc7348bd4eccabb27896b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -993,6 +1089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1058,6 +1158,10 @@ PrefabInstance:
     - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1125,6 +1229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1143,9 +1251,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2739361440413031307}
     m_Modifications:
+    - target: {fileID: 1626457090031205914, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_Name
       value: sandWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261393456453440005, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_RootOrder
@@ -1190,6 +1310,18 @@ PrefabInstance:
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530997649028456821, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816103411799204129, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165546732436225281, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1257,6 +1389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1275,9 +1411,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2739361440413031307}
     m_Modifications:
+    - target: {fileID: 1626457090031205914, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_Name
       value: sandWall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261393456453440005, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_RootOrder
@@ -1323,6 +1471,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3530997649028456821, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816103411799204129, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165546732436225281, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1341,9 +1501,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2739361440413031307}
     m_Modifications:
+    - target: {fileID: 1626457090031205914, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_Name
       value: sandWall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261393456453440005, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_RootOrder
@@ -1388,6 +1560,18 @@ PrefabInstance:
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530997649028456821, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816103411799204129, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165546732436225281, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1455,6 +1639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1521,6 +1709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1539,9 +1731,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2739361440413031307}
     m_Modifications:
+    - target: {fileID: 1626457090031205914, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_Name
       value: sandWall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261393456453440005, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_RootOrder
@@ -1587,6 +1791,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3530997649028456821, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816103411799204129, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165546732436225281, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1605,9 +1821,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2739361440413031307}
     m_Modifications:
+    - target: {fileID: 1626457090031205914, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_Name
       value: sandWall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261393456453440005, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_RootOrder
@@ -1652,6 +1880,18 @@ PrefabInstance:
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530997649028456821, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816103411799204129, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165546732436225281, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1719,6 +1959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1741,6 +1985,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6165529310372705319, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 8161747320736056443, guid: 3bc597358f75ac9428b9d66bb12f2e7f, type: 3}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1751,7 +1999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1851,6 +2099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1916,6 +2168,10 @@ PrefabInstance:
     - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1983,6 +2239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2049,6 +2309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2067,9 +2331,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2739361440413031307}
     m_Modifications:
+    - target: {fileID: 1626457090031205914, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_Name
       value: sandWall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780529888488149997, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261393456453440005, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_RootOrder
@@ -2114,6 +2390,18 @@ PrefabInstance:
     - target: {fileID: 2588220101314272642, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530997649028456821, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816103411799204129, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165546732436225281, guid: 07fbe7e6d09782b41829d706c03decd7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2181,6 +2469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2203,6 +2495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 6165529310372705319, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 8161747320736056443, guid: c95218655a105ab479ed2afac14bf679, type: 3}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2213,7 +2509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6590833260156382049, guid: 026403e6d995f1141a5a1111d214ef09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2313,6 +2609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2378,6 +2678,10 @@ PrefabInstance:
     - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2445,6 +2749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2510,6 +2818,10 @@ PrefabInstance:
     - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
       propertyPath: m_Name
       value: MetalBarrier_06_v2 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1806370008483339937, guid: afc561f13a5ea0346867dabaab718d45, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

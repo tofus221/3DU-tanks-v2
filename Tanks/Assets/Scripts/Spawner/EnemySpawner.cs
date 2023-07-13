@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(_enemy, transform.position, Quaternion.identity);
+        Instantiate(_enemy, transform);
         LevelManager.AddEnemy();
     }
 }

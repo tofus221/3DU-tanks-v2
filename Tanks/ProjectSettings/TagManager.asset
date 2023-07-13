@@ -6,16 +6,18 @@ TagManager:
   tags:
   - Walls
   - FxTemporaire
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Walls
   - Water
   - UI
   - Bullet
   - Player
-  - 
+  - Obstacles
   - 
   - 
   - 

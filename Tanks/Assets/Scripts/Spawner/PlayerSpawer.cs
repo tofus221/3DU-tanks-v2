@@ -9,6 +9,6 @@ public class PlayerSpawer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(_Player, transform.position, Quaternion.identity);
+        Instantiate(_Player, transform);
     }
 }
