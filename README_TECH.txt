@@ -1,3 +1,5 @@
+Nous avons utilisé la version 2022.3.4f1 de unity
+
 Le projet se compose uniquement de deux scènes:
 -menu
 -Arena

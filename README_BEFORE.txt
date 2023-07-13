@@ -8,3 +8,5 @@ Z-S: Avancer/reculer
 Q-D: tourne le tank à gauche/droite
 souris: viser
 clique gauche: tirer
+
+Votre tank a 3 vie, les tanks enemi n'ont qu'une seule vie.
