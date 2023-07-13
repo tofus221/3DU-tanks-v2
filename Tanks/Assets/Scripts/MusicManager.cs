@@ -19,6 +19,8 @@ public class MusicManager : MonoBehaviour
 
     public IEnumerator PlayRoundStart()
     {
+        if (_audio == null) yield break;
+        
         _audio.Stop();
         _audio.PlayOneShot(_roundStart);
         yield return new WaitForSeconds(_roundStart.length);
